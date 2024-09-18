@@ -33,7 +33,7 @@ font-weight: bold;
 }
 
 .MY link:hover {
-    color: rgb(240, 17, 17);
+    color: hsl(0, 88%, 50%);
     text-decoration: underline;
 
   }
@@ -44,4 +44,3 @@ font-weight: bold;
     border-radius: 10px;
     margin-bottom: 10px;
   }
-  
