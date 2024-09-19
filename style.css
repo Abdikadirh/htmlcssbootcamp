@@ -1,46 +1,43 @@
 body {
     font-family: "Arial", "Helvetica", sans-serif;
-    background-color: #0c0c0c;
+    background-color: white;
     margin: 0;
     padding: 0;
     h1 {
-        background-color: #910def;
+        background-color: black;
     }
   }
 
   h1 {
     color: #19f746;
+    text-align: center;
   }
 
   p {
-      font: size 18px;
+      font-size: 20px;
+      text-align: center;
       
     }
-    
-    .h4StartPage {
-        color: olive;
-        font: size 18px;
-  }
   
-  #TextParagrafSmall{
-    background-color: yellow;
+  #paragraph {
+    color: blue;
+    font-size: 25px;
   }
 
-  .My link{
-color: #19f746;
-text-decoration: #f7092d;
-font-weight: bold;
+img{
+    text-align: center;
+    background-color: black;
 }
+@media (max-width:600px) {
+    body {
+        background-color: yellow;
+    }
+}
+@media (min-width:500px) {
+    body {
+        background-color: peru;
+    }
+   
+   
 
-.MY link:hover {
-    color: hsl(0, 88%, 50%);
-    text-decoration: underline;
-
-  }
-
-  .My image{
-    width: 250;
-    border: 4px solid #fafa;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
+}
