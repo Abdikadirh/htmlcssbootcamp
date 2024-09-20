@@ -1,19 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsiv design och CSS Media Queries</title>
-   <link rel="stylesheet" href="style.css">
-
-</head
-
-
+    <meta name="description" content="En bloggpost om fördelarna med att använda semantisk HTML och hur man gör webben mer tillgänglig.">
+    <title>Fördelar med Semantisk HTML och Tillgänglighet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h1>Welcome to Responsiv design och CSS Media Queries</h1>
-    
-    <p id="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, sequi.</p> <b></b>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corporis aliquid maiores eum veritatis exercitationem optio eligendi, veniam blanditiis numquam nam! Ex voluptates ad ducimus tempore id animi, cupiditate autem?</p> <b></b>
-    <img src="emoji.jpeg" alt="Test">
+    <!-- Header: Innehåller webbplatsens huvudrubrik -->
+    <header>
+        <nav id="info">
+            <ul>
+                <li><a href="index.html" id="l1">Hem</a></li>
+                <li><a href="blog.html" id="l1">Blogg</a></li>
+                <li><a href="about.html" id="l1">Om oss</a></li>
+                <li><a href="contact" id="l1">Kontakt</a></li>
+            </ul>
+        </nav>
+        <h1>Min Webbutvecklingsblogg</h1>
+    </header>
+
+    <!-- Main: Huvudinnehåll för sidan -->
+    <main class="huvudrubrik">
+        <article>
+            <!-- Använd <header> för att strukturera rubriken i bloggposten -->
+            <header>
+                <h2>Fördelar med Semantisk HTML och Tillgänglighet</h2>
+                <p>Publicerad den <time datetime="2024-09-15">15 september 2024</time> av <a href="author.html">Abdikadir Webbutvecklare</a></p>
+            </header>
+
+            <!-- Använd <section> för att gruppera relaterade innehåll -->
+            <section aria-labelledby="introduction">
+                <h3 id="introduction">Introduktion</h3>
+                <p>Semantisk HTML handlar om att använda rätt HTML-element för att beskriva innehållets betydelse. Det hjälper både webbläsare och sökmotorer att förstå webbplatsens struktur och innehåll. I den här bloggposten går vi igenom hur man kan använda semantisk HTML och förbättra tillgängligheten på webben.</p>
+            </section>
+
+            <section aria-labelledby="benefits">
+                <h3 id="benefits">Fördelar med Semantisk HTML</h3>
+                <p>Genom att använda semantiska element som <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> och <code>&lt;nav&gt;</code> kan du göra ditt innehåll mer meningsfullt och strukturerat. Här är några fördelar:</p>
+                <ul>
+                    <li>Bättre sökmotoroptimering (SEO)</li>
+                    <li>Förbättrad tillgänglighet för användare med hjälpmedel</li>
+                    <li>Enklare underhåll och utveckling av webbplatsen</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="accessibility">
+                <h3 id="accessibility">Tillgänglighetsförbättringar</h3>
+                <p>Tillgänglighet handlar om att göra webbinnehåll tillgängligt för så många användare som möjligt, inklusive personer med funktionsnedsättningar. Här är några metoder för att förbättra tillgängligheten på din webbplats:</p>
+                <ol>
+                    <li><strong>Använd aria-attribut:</strong> Förbättra navigering för skärmläsare med <code>aria-label</code> och <code>aria-labelledby</code>.</li>
+                    <li><strong>Beskrivande länkar:</strong> Använd länktext som beskriver målet med länken. Undvik att använda "Klicka här".</li>
+                    <li><strong>Kontraster:</strong> Se till att färger har tillräcklig kontrast för att vara läsbara.</li>
+                </ol>
+            </section>
+
+            <!-- Avslutning -->
+            <footer>
+                <p>Denna bloggpost skrevs som en del av vår serie om webbutveckling. Läs fler artiklar på vår <a href="blog.html">blogg</a>.</p>
+            </footer>
+        </article>
+    </main>
+
+    <!-- Footer: Innehåller sidfot med länkar och annan sekundär information -->
+    <footer>
+        <section aria-labelledby="contact-info">
+            <h3 id="contact-info">Kontaktinformation</h3>
+            <p>Kontakta oss via e-post på <a href="mailto:info@webbplats.com">info@webbplats.com</a> eller ring oss på <a href="tel:+461234567890">+46 123 456 7890</a>.</p>
+        </section>
+    </footer>
+
+</body>
 </html>

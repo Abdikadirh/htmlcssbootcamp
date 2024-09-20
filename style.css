@@ -1,43 +1,37 @@
 body {
-    font-family: "Arial", "Helvetica", sans-serif;
-    background-color: white;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    h1 {
-        background-color: black;
-    }
+    background-color: #f5f4f4;
   }
 
-  h1 {
-    color: #19f746;
-    text-align: center;
-  }
-
-  p {
-      font-size: 20px;
-      text-align: center;
-      
-    }
-  
-  #paragraph {
-    color: blue;
-    font-size: 25px;
-  }
-
-img{
-    text-align: center;
+  #info {
     background-color: black;
+    color: rgb(232, 28, 28);
+  }
+#l1{
+    color: white;
 }
-@media (max-width:600px) {
-    body {
-        background-color: yellow;
-    }
-}
-@media (min-width:500px) {
-    body {
-        background-color: peru;
-    }
-   
-   
 
-}
+  .header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  h1{
+     color: rgb(11, 11, 11);
+  }
+ .huvudrubrik {
+    color: grey;
+    background-color: #333;
+ }
+  .content {
+    background-color: white;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+</style>
